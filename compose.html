@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compose Email</title>
+    <script src="./script.js"></script>
+    <style>
+        .mail{
+         padding: 2em;
+         border:solid purple;
+         background-color: lightpink;
+         text-align: justify;
+        }   
+    </style>
+</head>
+<body>
+    <div class="mail">
+    <form action="compose mail">
+        <label for="">To: </label>
+        <input type="email" name="" id="to" required placeholder="Add recipents">
+    
+        <label for="">CC: </label>
+        <input type="email" name="" id="" placeholder="Add CC"><br>
+    
+        <label for="subject">Subject: </label> 
+        <input type="text" width="55" name="" id="subject" placeholder="Enter subject of mail"><br>
+    
+        
+        <textarea id="body" rows=5 cols=55 placeholder="Enter message body here.."></textarea><br>
+    
+        
+        <button type="submit" value="Send" onclick="sendEmail()">Send Mail</button>
+    </form>
+</div>
+</body>
+</html>
+

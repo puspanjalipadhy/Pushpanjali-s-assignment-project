@@ -1,0 +1,107 @@
+body {
+    background: #f3f2f2;
+    /* background-image: linear-gradient( 135.9deg,  rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% ); */
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+   .vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+  .page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+    margin-top: -3rem;
+  } 
+  
+  #sidebar.active {
+    margin-left: -17rem;
+  }
+  
+  #content.active {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .separator {
+    margin: 3rem 0;
+    border-bottom: 1px dashed #fff;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  .text-gray {
+    color: #aaa;
+  }
+  .nav-link{
+      text-transform: capitalize;
+      text-size-adjust: none;
+      
+  }
+  .nav-link:hover{
+      background:#f3f2f2;
+  }
+  .text-primary{
+      color:#7579e7 !important;
+  }
+  .static-sidebar{
+    width: 20vw !important;
+    height: 80vh;
+    background-color: #f3f2f2;
+    padding-left: 0px;
+    margin-left: -20px;
+  }
+  .static-sidebar > * {
+    color: black !important;
+  }
+  .topbar{
+     height: 6vh;
+  }
+  .search1{
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .mails{
+    width: 75vw;
+    margin-top: 60px;
+    margin-left: 60px;
+  }
+  @media (max-width: 768px) {
+    #sidebar {
+      margin-left: -17rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 17rem;
+      width: calc(100% - 17rem);
+    }
+  }  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  

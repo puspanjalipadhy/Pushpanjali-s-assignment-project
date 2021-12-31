@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Login Form 
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="./dataloader.js"></script>
+    <script src="./script.js"></script>
+    <style>
+        body{
+background: url("background.jpeg") top left repeat, url(images/bg_image.jpg) top left no-repeat ;
+background-attachment: fixed;
+background-position: top left;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+font: 12px Arial, Tahoma, Georgia, "Times New Roman", Times, serif;
+color: #000;
+margin-right: 30px ;
+
+            background-size: auto, cover;
+        }
+        .container{
+            
+    padding:10em 29em;
+}
+.container>form{
+    background-color: pink;
+padding: 2em;
+border-radius: 0.6em;
+border: 2px solid darkcyan;
+}
+    
+    </style>
+</head>
+<body onload="init()">
+    <div class="container">
+        <h2>Login Form</h2>
+    <form>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" REQUIRED="TRUE"/>
+        </div>
+        <div class="form-group">
+          <label for="pass">Password:</label>
+          <input type="password" class="form-control" id="pass" placeholder="Enter password" name="pass" REQUIRED="TRUE"/>
+        </div>
+       
+        <button type="button" onclick="signIn()" id="save_btn" class="btn btn-success"  >Sign In</button>
+        <button type="reset" class="btn btn-success" > Reset </button>
+    </form>
+</body>
+</html>
+
+
+
